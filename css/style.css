@@ -48,11 +48,11 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
-  /*   margin: 0px -0.5rem; */
+  /*   margin: 0px -15px; */
 }
 
 [class*="col"] {
-  padding: 0px 0.5rem;
+  padding: 0px 15px;
 }
 
 .col-1-1 {
@@ -90,6 +90,7 @@ img {
 .btn {
   background-color: #0062fe;
   color: white;
+  font-size: 14px;
 }
 
 .btn-primary {
@@ -104,6 +105,9 @@ h1 {
   font-size: 60px;
   font-weight: bolder;
   padding-bottom: 40px;
+}
+h2 {
+  font-size: 32px;
 }
 p {
   font-size: 14px;
@@ -158,9 +162,97 @@ header ul li {
 
 /* PLANS SECTION*/
 .plans-section,
-.partner-section {
+.partner-section,
+.dropbox-business-section {
   padding: 50px 0px;
 }
 
-.plans-heading {
+.invoice-buttons {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.plans-section .row {
+  row-gap: 30px;
+  margin: 0px -15px;
+}
+.plans-heading .invoice-buttons .round-btn {
+  width: 13px;
+  height: 13px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: inline-block;
+}
+.round-btn-active {
+  border: 3px solid #0062fe !important;
+}
+
+.invoice-buttons span:nth-of-type(2) {
+  padding-right: 30px;
+}
+
+.plan-card .plan-type {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 7px;
+}
+
+.card-content {
+  padding: 25px 20px;
+  border: 1px solid rgb(211, 211, 211);
+  border-top: none;
+}
+
+.card-content .plan-price .price {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card-content .plan-price .price-month {
+  font-size: 12px;
+  padding-top: 10px;
+  color: grey;
+}
+
+.card-content .plan-list {
+  padding: 40px 0px 50px 0px;
+}
+
+.card-content .plan-list ul li {
+  display: block;
+  padding: 8px 0px;
+  font-size: 13px;
+}
+
+.card-content .plan-buy-btn span {
+  padding: 30px 0px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.card-content .plan-buy-btn .try-link {
+  text-decoration: underline;
+  color: blue;
+}
+
+hr {
+  width: 50px;
+  color: grey;
+  border: none;
+  border-top: 1px solid grey;
+  padding-bottom: 40px;
+}
+.card-content .plan-feauture-list p {
+  padding-bottom: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-content .plan-feauture-list ul li {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: 13px;
 }

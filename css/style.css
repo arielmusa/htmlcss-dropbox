@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul,
@@ -56,13 +56,41 @@ img {
   width: calc(100% / 5);
 }
 
+.col-30 {
+  max-width: 30%;
+}
+.col-40 {
+  max-width: 40%;
+}
+
+.col-60 {
+  max-width: 60%;
+}
+.col-70 {
+  max-width: 70%;
+}
+
 .btn {
   background-color: #0062fe;
   color: white;
 }
 
+.btn-primary {
+  padding: 10px 20px;
+}
+
 .btn-header {
   padding: 5px 10px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+p {
+  font-size: 14px;
+  padding-bottom: 40px;
 }
 
 /**************** HEADER ****************/
@@ -89,4 +117,25 @@ header ul li {
 
 .header-login {
   padding-right: 10px;
+}
+
+/**************** MAIN ****************/
+
+.hero-section {
+  background-color: #b4d0e7;
+  padding-top: 50px;
+  margin-bottom: -10px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-disclaimer {
+  padding-top: 30px;
+}
+
+.fa-arrow-down {
+  font-size: 50px;
+  padding-bottom: 20px;
 }

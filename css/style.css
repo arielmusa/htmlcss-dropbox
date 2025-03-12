@@ -157,7 +157,8 @@ header ul li {
 }
 
 /* PLANS SECTION*/
-.plans-section {
+.plans-section,
+.partner-section {
   padding: 50px 0px;
 }
 

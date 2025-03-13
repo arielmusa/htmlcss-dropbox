@@ -120,6 +120,10 @@ p {
   font-size: 14px;
   padding-bottom: 40px;
 }
+a.link {
+  text-decoration: underline;
+  color: blue;
+}
 
 /**************** HEADER ****************/
 header {
@@ -152,7 +156,13 @@ header ul li {
 .hero-section {
   background-color: #b4d0e7;
   padding-top: 50px;
+  margin-bottom: 70px;
 }
+.hero-section .container {
+  position: relative;
+  top: 50px;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -164,13 +174,14 @@ header ul li {
 
 .fa-arrow-down {
   font-size: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 /* PLANS SECTION*/
 .plans-section,
 .partner-section,
-.dropbox-business-section {
+.dropbox-business-section,
+.client-section {
   padding: 50px 0px;
 }
 
@@ -243,11 +254,6 @@ header ul li {
   font-size: 12px;
 }
 
-.card-content .plan-buy-btn .try-link {
-  text-decoration: underline;
-  color: blue;
-}
-
 hr {
   width: 50px;
   color: grey;
@@ -289,4 +295,44 @@ hr {
 
 .dropbox-business-section h3 {
   padding-bottom: 20px;
+}
+
+.client-section h2 {
+  padding-bottom: 40px;
+}
+
+.client-section {
+  padding-bottom: 130px;
+}
+
+/**************** FOOTER ****************/
+
+footer {
+  background-color: black;
+  padding: 70px 0px 40px 0px;
+}
+.footer .row {
+  flex-direction: column;
+}
+footer h4 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+footer ul li {
+  color: white;
+  display: block;
+  padding-bottom: 0.7rem;
+}
+
+footer .lang-selector {
+  color: lightgrey;
+  padding-top: 100px;
+  vertical-align: center;
+  font-size: 12px;
+}
+
+footer .lang-selector hr {
+  width: 100px;
+  border-color: white;
 }

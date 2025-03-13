@@ -19,6 +19,7 @@ ul li {
 a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 img {
   max-width: 100%;
@@ -55,9 +56,6 @@ img {
   padding: 0px 15px;
 }
 
-.col-1-1 {
-  width: 100%;
-}
 .col-1-2 {
   width: calc(100% / 2);
 }
@@ -86,19 +84,28 @@ img {
 .col-70 {
   max-width: 70%;
 }
+.col-100 {
+  width: 100%;
+}
 
 .btn {
-  background-color: #0062fe;
   color: white;
   font-size: 14px;
 }
 
 .btn-primary {
   padding: 10px 20px;
+  background-color: #0062fe;
+}
+.btn-secondary {
+  padding: 10px 20px;
+  color: black;
+  border: 1px solid black;
 }
 
 .btn-header {
   padding: 5px 10px;
+  background-color: #0062fe;
 }
 
 h1 {
@@ -192,17 +199,20 @@ header ul li {
   padding-right: 30px;
 }
 
+.plans-section .plan-card {
+  border: 1px solid rgb(211, 211, 211);
+  height: 100%;
+}
+
 .plan-card .plan-type {
   font-size: 12px;
   text-align: center;
-  border: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
   padding: 7px;
 }
 
 .card-content {
   padding: 25px 20px;
-  border: 1px solid rgb(211, 211, 211);
-  border-top: none;
 }
 
 .card-content .plan-price .price {
@@ -255,4 +265,20 @@ hr {
   display: inline-block;
   padding-bottom: 20px;
   font-size: 13px;
+}
+
+.col-100 .row {
+  justify-content: space-between;
+}
+
+.col-100 .plan-list {
+  padding-bottom: 0px !important;
+}
+
+.partner-section .col-40 {
+  padding-top: 40px;
+}
+
+.partner-section h3 {
+  padding-bottom: 20px;
 }
